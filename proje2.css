@@ -1,0 +1,197 @@
+.nav-underline {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin: 0 10px; /*  kenar boşluğunu değiştirme yeri */
+    
+    
+  }
+  
+  .nav-link {
+    color: rgb(219, 219, 219);
+  }
+  body {
+    background-color: black ;
+  }
+
+  .nav-item {
+    color: rgb(250, 253, 255);
+  }
+ 
+.nav-underline .nav-item:nth-child(1) .nav-link {
+    color: #ffffff; 
+}
+
+.nav-underline .nav-item .nav-link.active {
+    color: #ffffff;
+}
+
+h1{
+    color: #ffffff;
+    font-family: 'Rubik Doodle Triangles', sans-serif;
+}
+
+
+/*  linklerin rengini değiştirme */
+.nav-underline .nav-item .nav-link {
+    color: #ffffff; 
+}
+
+/*üzerine gelince hangi renk olsun*/
+.nav-underline .nav-item .nav-link:hover {
+    color: #1cf808; 
+    text-decoration: none; /* Link altı çizgisi kaldırma  */
+}
+
+.carousel-inner  {
+  width: 60%;
+  height: auto;
+  margin: 0 20%;
+  padding:  0%;
+  margin-top: -20px;
+  overflow: hidden;
+  padding-top: 20px;  
+}
+
+.social-media {
+  position: absolute;
+  bottom: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+
+
+.social-media div {
+  display: inline;
+}
+
+.social-media div a {
+  display: inline-flex;
+  width: 80px;
+  height: 80px;
+  background: #000000;
+  font-size: 80px; /* İkon boyutunu ayarlama */
+  color: #ffffff;
+  margin: 0 25px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media a i {
+  transition: 0.5s all;
+}
+
+.social-media a:hover >i {
+  transform: scale(1.6) rotate(360deg);
+}
+
+.container {
+  position: relative;
+}
+
+.container .social-media {
+  position: absolute;
+  bottom: 0;  
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+}
+
+.image-container {
+  display: block;
+  text-align: center; 
+  margin-top: 30px;
+ 
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+} 
+
+h2{
+  color: #ffffff;
+  padding: 0 80px;
+  margin:  100px;
+  justify-content: center;
+  font-family: a;
+  text-decoration: none;  
+}
+
+h3{
+  color: #ffffff;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.line {  /* düz çizgi yeri*/
+  border-bottom: 2px solid rgb(255, 255, 255);
+  width: 100%;
+  position: absolute;
+  bottom: -490px;
+ 
+}
+
+a[href="mailto:bunyaminbulsu1@gmail.com"] {
+  text-decoration: none; 
+  color: #05f1dee7; 
+
+  
+}
+
+a[href="mailto:bunyaminbulsu1@gmail.com"]:hover {
+  text-decoration: underline; /* üstüne gelince alt çizgi görünsünmü */
+  
+}
+
+a[href^="mailto"] {
+  color: rgba(255, 0, 0, 0.781); 
+  transition: transform 0.3s, box-shadow 0.3s; 
+  
+}
+
+a[href^="mailto"]:hover {
+  transform: scale(2.2); 
+  box-shadow: 0 0 10px rgba(238, 222, 1, 0.986); /* Link üzerine gelindiğinde hangi renk gölge olsun */
+  
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {  /*kayan yazı ayarları*/
+  width: 27ch;
+  height: 2ch;
+  animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid ;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  margin: 25px;
+  
+}
+@keyframes typing {
+  from{
+    width: 0;
+  }
+}
+@keyframes blink {
+  50%{
+    border-color: transparent;
+  }
+}
+
